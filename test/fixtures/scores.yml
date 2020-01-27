@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver_name: MyString
+  country: MyString
+  car_number: 1
+  car_color: MyString
+  position: 1
+  interval: 1
+  pitting: false
+  last_lap: 1.5
+
+two:
+  driver_name: MyString
+  country: MyString
+  car_number: 1
+  car_color: MyString
+  position: 1
+  interval: 1
+  pitting: false
+  last_lap: 1.5
