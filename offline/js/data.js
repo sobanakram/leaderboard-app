@@ -1,5 +1,5 @@
 const leaderboardKey = 'leaderboard_scores';
-let initWebSocket = () => {
+const initWebSocket = () => {
   let ws = new WebSocket('ws://localhost:3000/cable');
   ws.onopen = () => {
     //Subscribe to the channel
@@ -18,7 +18,7 @@ let initWebSocket = () => {
   };
 };
 
-let registerHandlebarPartial = () => {
+const registerHandlebarPartial = () => {
   Handlebars && Handlebars.registerPartial(
     "score",
     "<div class='position'>{{score.position}}</div>" +
@@ -28,6 +28,6 @@ let registerHandlebarPartial = () => {
   );
 };
 
-let getHandlebarScoresTemplate = () => {
+const getHandlebarScoresTemplate = () => {
   return Handlebars.compile("{{#each scores}}<div class='score'>{{>score score=.}}</div>{{/each}}");
 };
