@@ -1,24 +1,31 @@
-# README
+# Leaderboard App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# How to run this project
 
-Things you may want to cover:
+Clone this repository.
 
-* Ruby version
+```console
+$ git clone git@github.com:sobanakram/leaderboard-app.git
+$ cd leaderboard-app
+```
+make sure you have Ruby version 2.6.5
 
-* System dependencies
+Install gem dependencies
+```console
+$ bundle install
+```
 
-* Configuration
+Create, migrate database
+```console
+$ rails db:create db:migrate
+```
 
-* Database creation
+Run rails server
+```console
+$ rails s
+```
 
-* Database initialization
+Open offline/leaderboard.html
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run script from this repo https://github.com/stevebutterworth/Leaderboard-Data-Simulator
+Leaderboard will auto update after every second.
